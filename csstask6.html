@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        label{
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .user-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #999;
+        }
+        #login-btn {
+            background-color: rgb(74, 237, 74);
+            color: white;
+            display: block;
+            width: 320px;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #cancel-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .checkbox-label {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        #forget-password {
+            margin-top: 10px;
+            font-size: smaller;
+            color: blue;
+            text-decoration: underline;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="user.jpg" alt="User Image" class="user-image">
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter username">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+            <br>
+            <button type="submit" id="login-btn">Login</button>
+            <label for="remember-me" class="checkbox-label">
+                <input type="checkbox" id="remember-me" name="remember-me"> Remember me
+            </label>
+            <br>
+            
+            <button type="button" id="cancel-btn">Cancel</button>
+        </form>
+        <div id="forget-password">Forgot password?</div>
+    </div>
+</body>
+</html>

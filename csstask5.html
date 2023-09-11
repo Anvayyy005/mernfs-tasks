@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 5</title>
+    <style>
+        p,h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blueviolet;
+        }
+        
+        .parent{
+            background-color: rgb(222, 222, 7);
+            height: 500px;
+            width: 50%;
+            margin-top: 0px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        a{
+            text-decoration: none;
+        }
+        .b{
+            width: 100px;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        .sidebars{
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="sidebars">
+            <div class="b"><a href="#">Home Page</a></div>
+            <div class="b"><a href="#">Musings</a></div>
+            <div class="b"><a href="#">My Town</a></div>
+            <div class="b"><a href="#">Links</a></div>
+        </div>
+
+        <div class="sidebars">
+            <div><h1>My first styled page</h1></div>
+            <div><p>Welcome to my styled page</p></div>
+            <div><p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p></div>
+            <div><p>There should be more here, but I don't know what yet.</p></div><hr>
+            <div><em>Made on 5 April 2004 <br>by myself</em></div>
+        </div>
+    </div>
+</body>
+</html>
